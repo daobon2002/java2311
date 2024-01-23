@@ -1,0 +1,34 @@
+/* .btn{
+    background-color: antiquewhite;
+    margin: 1 0px;
+}
+.btn:hover + .aa{
+    background-color: aquamarine;
+    display: block;
+
+}
+.aa{
+    display: none;
+    transition: 1.5s;
+}
+.ab{
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+.ab:last-child{
+    border-bottom: 1px solid black;
+} */
+/* .span{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    flex-direction: column-reverse;
+    
+} */
+.sum{
+    
+}

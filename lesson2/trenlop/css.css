@@ -1,0 +1,23 @@
+p{
+    color: palevioletred;
+    font-size: 20px;
+    margin: 80px;
+}
+#a{
+    color: blueviolet;
+    font-size: 40px;
+}
+.a1{
+    color: rgb(10, 10, 10);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+h2{
+    font-weight: 100;
+    text-align:right;
+}
+.ABC{
+    opacity: 50%;
+    border: 20px;
+    border-radius: 4px;
+}

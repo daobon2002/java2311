@@ -1,0 +1,58 @@
+.admin{
+  width: 1000px;
+  height: 500px;
+  background-color: rgb(246, 219, 185);
+  position: relative;
+  padding: 10PX;
+  box-sizing: content-box;
+  border: 1px solid black;
+}
+.home{
+  width: 150px;
+  height: 460px;
+  background-color: aquamarine;
+  padding: 10px;
+  border: 1px solid black;
+}
+.h1-home{
+  padding: 2px;
+  background-color: rgb(166, 232, 74);
+  text-align: center;
+  border: 1px solid black;
+}
+.vip{
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  width: 180px;
+  height: 222px;
+  border: 1px solid black;
+  background-color: rgb(205, 183, 150);
+
+}
+.h1-vip{
+  border-bottom:1px solid black ;
+  text-align: center;
+  padding: 3.5px;
+}
+.users{
+  width: 600px;
+  height: 80px;
+  background-color: aquamarine;
+  border: 1px solid;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.my{
+  position: absolute;
+  top: 150px;
+  right:  200px;
+  width: 180px;
+  height: 221px;
+  border: 1px solid black;
+  background-color: rgb(205, 183, 150);
+
+}

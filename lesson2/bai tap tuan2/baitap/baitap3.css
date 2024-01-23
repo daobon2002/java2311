@@ -1,0 +1,58 @@
+.o{
+  width: 190px;
+  height: 50px;
+  background-color: royalblue;
+  margin-left: 650px;
+  margin-top: 200px;
+}
+label{
+  margin-left: 42px;
+  margin-top: 8px;
+  float: left;
+  font-size: 25px;
+  color: aliceblue;
+}
+h1{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button{
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 190px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 545px;
+  
+}
+.an{
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 190px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.an:hover{
+  background-color: antiquewhite;
+  color: black;
+  border-color:antiquewhite ;
+}
+button:hover{
+  background-color: antiquewhite;
+  color: black;
+  border-color:antiquewhite ;
+}
+.chuthuong{
+  float: left;
+}
+.chudam{
+  float: left;
+}

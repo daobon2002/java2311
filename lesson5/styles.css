@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:900),(min-width:300) {
+    .featuer1{
+    width: 19%;
+    
+    }
+    
+    
+}
+@media (){}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: tomato;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 26px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.featuer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.featuer1{
+    width: 19%;
+    height: 180px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 1px solid black;
+}
+.image{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.image1{
+    width: 48%;
+    height: 400px;
+    background-color: rgb(115, 247, 154);
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    
+
+}
+.contentleft{
+    width: 39%;
+    height: 500px;
+    background-color: peru;
+    border: 1px solid black;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contentright{
+    background-color: olivedrab;
+    border: 1px solid black;
+    width: 59%;
+    height: 300px;
+
+}
+.contentright1{
+    width: 59%;
+    height: 190px;
+    background-color: rgb(69, 237, 142);
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.content-left {
+    width: 49%;
+    border: 1px solid black;
+    background: #798ff496;
+}
+
+.content-right {
+    width: 49%;
+}
+
+.contents {
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+.content.content-2 {
+    height: 200px;
+    border: 1px solid black;
+    background: rgb(84, 233, 128);
+}
+
+.content.content-3 {
+    height: 120px;
+    border: 1px solid black;
+    background: #e8d889;
+    margin-top: 12px;
+}
+
+.element-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+}

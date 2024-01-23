@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Định dạng CSS cho danh bạ */
+    </style>
+</head>
+<body>
+    <div id="contact-form">
+        <input type="text" id="name" placeholder="Tên">
+        <input type="text" id="phone" placeholder="Điện thoại">
+        <button onclick="addContact()">THÊM</button>
+    </div>
+    <div id="search-form">
+        <input type="text" id="search" placeholder="Tìm kiếm">
+        <button onclick="searchContact()">TÌM</button>
+        <button onclick="deleteDuplicates()">XOÁ TRÙNG</button>
+    </div>
+    <div id="contact-list">
+        <!-- Danh sách liên hệ sẽ được hiển thị ở đây -->
+    </div>
+
+    <script>
+        var contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+
+        function addContact() {
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+
+            if(name === "" || phone === "") {
+                alert("Vui lòng nhập tên và số điện thoại.");
+                return;
+            }
+
+            var contact = {
+                name: name,
+                phone: phone
+            };
+
+            contacts.push(contact);
+
+            contacts.sort(function(a, b) {
+                return a.name.localeCompare(b.name);
+            });
+
+            localStorage.setItem('contacts', JSON.stringify(contacts));
+
+            updateContactList();
+        }
+
+        function searchContact() {
+            var searchValue = document.getElementById('search').value;
+
+            var searchResults = contacts.filter(function(contact) {
+                return contact.name.includes(searchValue) || contact.phone.includes(searchValue);
+            });
+
+            displayContacts(searchResults);
+        }
+
+        function deleteDuplicates() {
+            var uniqueContacts = [];
+            var seenPhoneNumbers = new Set();
+
+            for(var i = contacts.length - 1; i >= 0; i--) {
+                if(!seenPhoneNumbers.has(contacts[i].phone)) {
+                    seenPhoneNumbers.add(contacts[i].phone);
+                    uniqueContacts.unshift(contacts[i]);
+                }
+            }
+
+            contacts = uniqueContacts;
+            localStorage.setItem('contacts', JSON.stringify(contacts));
+
+            updateContactList();
+        }
+
+        function updateContactList() {
+            var contactListDiv = document.getElementById('contact-list');
+            contactListDiv.innerHTML = "";
+
+            for(var i = 0; i < contacts.length; i++) {
+                var contactDiv = document.createElement('div');
+                contactDiv.textContent = contacts[i].name + ": " + contacts[i].phone;
+                contactListDiv.appendChild(contactDiv);
+            }
+        }
+    </script>
+</body>
+</html>

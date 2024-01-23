@@ -1,0 +1,412 @@
+.trang1{
+    border: 1px solid rgb(66, 119, 159);
+    float: left;
+    padding: 6px;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+    color: rgb(101, 198, 193);
+    
+}
+.trang2{
+    border-right: 1px solid rgb(66, 119, 159);
+    border-top: 1px solid rgb(66, 119, 159);
+    border-bottom: 1px solid rgb(66, 119, 159);
+    float: left;
+    padding: 6px;
+    color: rgb(101, 198, 193);
+}
+.trang5{
+    border-right: 1px solid rgb(66, 119, 159); 
+    border-top: 1px solid rgb(66, 119, 159);
+    border-bottom: 1px solid rgb(66, 119, 159);
+    float: left;
+    padding: 6px;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    color: rgb(101, 198, 193);
+}
+
+/* bai tap 1 */
+ .banner{
+    background-color: aquamarine;
+    width: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    
+ }
+
+.tieude{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+    width: 350px;
+    height: 45px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 6px;
+}
+.p{
+    background-color: antiquewhite;
+    width: 340px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+button{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    padding: 5px 8px;
+    border: 1px solid black;
+
+}
+/* bai tap 2 */
+ .tong{
+    border: 1px solid  rgb(168, 166, 166);
+    width: 500px;
+    height: 280px;
+    float: left;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.phan1{
+    border-bottom: 1px solid rgb(168, 166, 166);
+    padding: 20px;
+}
+.phan2{
+    border-bottom: 1px solid rgb(168, 166, 166);
+    padding: 20px;
+}
+.phan3{
+    margin-left: 200px;
+    padding: 20px;
+  
+}
+.close{
+    background-color: white;
+    border: none;
+    color: rgb(168, 166, 166);
+    font-size: 25px;
+    width:35px ;
+    height: 35px;
+    margin-left: 274px;
+    margin-top: 20px;
+}
+.close:hover{
+    background-color: rgb(168, 166, 166);
+    color: white;
+}
+.btnclose{
+    background-color: rgb(79, 77, 77);
+    border: none;
+}
+.btnclose:hover{
+    background-color:rgb(168, 166, 166) ;
+}
+.btnsave{
+    background-color: rgb(5, 68, 68);
+    border: none;
+}
+.btnsave:hover{
+    background-color: rgb(34, 114, 114);
+}
+h1{
+    float: left;
+   
+}
+p{
+    font-size: 18px;
+}
+
+/* bai tap 3 */
+
+.title{
+   
+    width: 510px;
+    height: auto;
+    
+    
+}
+.imagecap{
+    width: 400px;
+    height: 250px;
+    
+    background-color:slategrey;
+    position: relative;
+}
+.p-imagecap{
+    position: absolute;
+    left: 32%;
+    top: 35%;
+    font-size: 30px;
+    color: aliceblue;
+}
+.card{
+    border: 1px solid slategrey;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.p-span{
+    font-weight: 900;
+    font-size: 30px;
+}
+.p-card{
+    font-size: 25px;
+}
+.item{
+    border: 1px solid slategrey;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.p-item{
+    font-size: 25px;
+}
+.second{
+    border: 1px solid slategrey;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.p-second{
+    font-size: 25px;
+}
+.third{
+    border: 1px solid slategrey;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.p-third{
+    font-size: 25px ;
+}
+.link{
+    border: 1px solid slategrey;
+    width: 400px;
+    padding: 15px 10px 15px 10px;
+    box-sizing: border-box;
+    
+}
+.link-card{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.link-link{
+    font-size: 20px;
+}
+
+/* bai tap 4 */
+.keep{
+    width: 450px;
+    height: 200px;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 1px solid green;
+}
+.p-keep{
+    padding: 10px;
+    background-color:rgb(78, 100, 192);
+    width:400px ;
+    margin-left: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    color: aliceblue;
+}
+.btndelete{
+    background-color: red;
+    border: none;
+}
+.btndelete:hover{
+    background-color: rgb(231, 93, 93);
+    color: black;
+}
+.btnkeep{
+    background-color: rgb(92, 137, 171);
+    border: none; 
+}
+.btnkeep:hover{
+    background-color: rgb(46, 122, 132);
+    color: black;
+}
+
+/* bai tap 5 */
+
+.phantram1{
+    width: 500px;
+    height: 10px;
+    background-color: rgb(221, 225, 224);
+    border-radius: 5px ;
+}
+.phantram2{
+    width: 500px;
+    height: 10px;
+    background-color: rgb(221, 225, 224);
+    border-radius: 5px ;
+    margin-top: 10px;
+   
+
+}
+.phantram2-1{
+    width: 125px;
+    height: 10px;
+    background-color: rgb(25, 123, 214);
+    border-radius: 5px ;
+    position: absolute;
+    left: 9px;
+    top: 29px; 
+}
+.phantram3{
+    width: 500px;
+    height: 10px;
+    background-color: rgb(221, 225, 224);
+    border-radius: 5px ;
+    margin-top: 10px;
+   
+
+}
+.phantram3-1{
+    width: 250px;
+    height: 10px;
+    background-color: rgb(25, 123, 214);
+    border-radius: 5px ;
+    position: absolute;
+    left: 9px;
+    top: 49px; 
+}
+
+.phantram4{
+    width: 500px;
+    height: 10px;
+    background-color: rgb(221, 225, 224);
+    border-radius: 5px ;
+    margin-top: 10px;
+    
+
+}
+.phantram4-1{
+    width: 375px;
+    height: 10px;
+    background-color: rgb(25, 123, 214);
+    border-radius: 5px ;
+    position: absolute;
+    left: 9px;
+    top: 69px; 
+}
+.phantram5{
+    width: 500px;
+    height: 10px;
+    background-color:  rgb(25, 123, 214);
+    border-radius: 5px ;
+    margin-top: 10px;
+}
+
+/* bai tap 6 */
+
+
+.mt{
+    background-color: rgb(177, 175, 177);
+    width: 700px;
+    height: 500px;
+    position: relative;
+    left: 25%;
+    margin-top: 7%;
+    border: 1px solid black;
+}
+.muctieu{
+    background-color: rgb(226, 222, 126);
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 265px;
+    border: 1px solid black;
+}
+.m1{
+    background-color: rgb(74, 234, 127);
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    border: 1px solid black;
+}
+.m6{
+    background-color: rgb(23, 154, 236);
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    border: 1px solid black;
+    left: 50px;
+}
+.m2{
+    background-color: rgb(0, 211, 21);
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    left: 280px;
+}
+.m5{
+    background-color: rgb(218, 88, 173);
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+    top:350px;
+    left: 280px;
+}
+.m3{
+    background-color: rgb(79, 212, 214);
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid black;
+    top:100px;
+    left: 480px;
+}
+.m4{
+    background-color: rgb(171, 2, 2);
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid black;
+    top:300px;
+    left: 480px;
+}
+h2{
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* bai tap 7 */
+
+.admin{
+    width: 700px;
+    height: 500px;
+    background-color: rgb(246, 219, 185);
+    position: relative;
+    padding: 10PX;
+    box-sizing: content-box;
+}
+.home{
+    width: 150px;
+    height: 460px;
+    background-color: aquamarine;
+}
+.h1-home{
+    padding: 2px;
+    background-color: rgb(232, 203, 166);
+}

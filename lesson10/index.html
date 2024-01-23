@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script src="scripts.js"></script>
+
+    <img src="https://dinhcuthanhcong.com/wp-content/uploads/2022/05/TRAI-NGHIEM-CUOC-SONG-DINH-CU-O-ANH-1.jpg" alt="anh" 
+     width="100px" height="100px"  id="image" >
+    <h1>URL</h1>
+    <input type="text" id="url">
+    <h1>Chieu rong(px)</h1>
+    <input type="text" id="width">
+    <h1>Chieu cao(px)</h1>
+    <input type="text" id="height">
+    <h1>bo goc(px)</h1>
+    <input type="text" id="radius">
+    <h1>Alt</h1>
+    <input type="text" id="alt">
+<hr>
+Câu 2
+
+            <input type="text" id="tcv" placeholder="Nhập công việc...">
+            <button onclick="btncv()">Tạo công việc</button>
+            <h1>Danh sách công việc cần làm</h1>
+            <ul id="cv">
+                <li>Đi chơi</li>
+                <li>Làm bài tập</li>
+                <li>Giặt quần áo</li>
+            </ul>
+<hr>
+Câu 3
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        font-size: 20px;
+       
+      }
+        th,td{
+            padding: 2px 20px ;
+        }
+      </style>
+    <table id="userTable">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Xóa</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Name 1</td>
+          <td>Address 1</td>
+          <td><button onclick="deleteRow(this)">Xóa</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Name 2</td>
+          <td>Address 2</td>
+          <td><button onclick="deleteRow(this)">Xóa</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Name 3</td>
+            <td>Address 3</td>
+            <td><button onclick="deleteRow(this)">Xóa</button></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Name 4</td>
+            <td>Address 4</td>
+            <td><button onclick="deleteRow(this)">Xóa</button></td>
+          </tr>
+          
+      </table>
+
+      
+      <h2>Đăng ký tài khoản</h2>
+<hr>
+Câu 4
+<form id="myForm">
+  Họ và tên*: <input type="text" id="name" required><br>
+  Giới tính: <input type="text" id="gender"><br>
+  Tuổi: <input type="number" id="age"><br>
+  Địa chỉ: <input type="text" id="address"><br>
+  Email*: <input type="email" id="email" required><br>
+  Mật khẩu*: <input type="password" id="password" required minlength="6"><br>
+  <input type="submit" value="Đăng ký">
+</form>
+
+<script>
+  // // tìm kiến theo id
+// console.log(document.getElementById("heading"))
+// // tìm kiến theo ten the
+// console.log(document.getElementsByTagName('1'))
+// //tìm kiến theo class  
+// console.log(document.getElementsByClassName('1'))
+
+
+// let sub= document.createElement('h3')
+// sub.setAttribute('id','sub-title')
+// sub.innerHTML="H2 mới"
+// // thêm 1 thẻ vào cuối cùng trong body
+// document.body.appendChild(sub)
+
+// const mang=document.getElementsByClassName('favorite-list-item');
+// for( let mang1 of mang){
+//     mang1.innerText="I love you thing";
+//     mang1.style.color='red';
+// }
+
+document.getElementById('url').oninput=function(){
+    const url=document.getElementById('url').value;
+    document.getElementById('image').setAttribute('src',url)
+}
+document.getElementById('width').oninput=function(){
+    const a=document.getElementById('width').value;
+    document.getElementById('image').setAttribute('width',a)
+}
+document.getElementById('height').oninput=function(){
+    const b=document.getElementById('height').value;
+    document.getElementById('image').setAttribute('height',b)
+}
+document.getElementById('alt').oninput=function(){
+    const c=document.getElementById('alt').value;
+    document.getElementById('image').setAttribute('alt',c)
+}
+document.getElementById('radius').oninput=function(){
+    const d=document.getElementById('radius').value;
+    document.getElementById('image').style.borderRadius =d +"px"
+
+}
+
+
+
+function btncv(){
+    let li=document.createElement('li');
+    let input= document.getElementById('tcv').value;
+    let t=document.createTextNode(input);
+    li.appendChild(t);
+    if(input==''){
+        alert(" bạn phải nhập nội dung công việc")
+    }else{
+        
+        document.getElementById("cv").appendChild(li);
+
+    }
+    document.getElementById('tcv').value = "";
+}
+
+function deleteRow(btn) {
+    const row = btn.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+          }
+
+
+          document.getElementById('myForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const gender = document.getElementById('gender').value;
+            const age = document.getElementById('age').value;
+            const address = document.getElementById('address').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            if (name === '' || email === '' || password >=6) {
+              alert('bạn còn nhập thiêu thông tin');
+            } else {
+              alert('Đăng ký thành công');
+            }
+          });
+
+
+</script>
+
+</body>
+</html> 

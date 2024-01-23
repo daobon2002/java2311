@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        // cau1
+        // for(let i=1;i<=500;i++){
+        //     console.log(i)
+        // }
+        
+
+
+        //cau2
+        // for(let i=1;i<=300;i++){
+        //    if(i % 2===0 & i%3==0){
+        //     console.log(i)
+        //    }
+        // }
+
+
+        // cau3
+        // let sum=0;
+        // for(let i=-30;i<=50;i++){
+        //     if(i%2==0){
+        //         sum +=i
+        //     }
+        // }
+        // console.log("Tổng các số chẵn là: " + sum);
+
+
+        // cau4
+        // function tinhGiaiThua(n) {
+        //     if (n === 0 || n === 1) {
+        //         return 1;
+        //     }      
+        //     let giaiThua = 1;   
+        //     for (let i = 2; i <= n; i++) {
+        //         giaiThua *= i;
+        //     }    
+        //     return giaiThua;
+        //     }
+        //     let n = parseInt(prompt("Nhập số n:"));
+        //     let ketQua = tinhGiaiThua(n);
+        //     console.log("Giai thừa của số " + n + " là: " + ketQua);
+
+
+        // cau5
+        // function timSoNhoNhatChiaHetChoX(a, b, x) {
+        //     for (let i = a; i <= b; i++) {
+        //         if (i % x === 0) {
+        //         return i;
+        //         }
+        //     }
+        //     }
+        //     let a = parseInt(prompt("Nhập số a:"));
+        //     let b = parseInt(prompt("Nhập số b (lớn hơn a):"));
+        //     let x = parseInt(prompt("Nhập số x:"));
+        //     if (a < b) {
+        //     let soNhoNhat = timSoNhoNhatChiaHetChoX(a, b, x);
+        //     if (soNhoNhat !== null) {
+        //         console.log("Số nhỏ nhất chia hết cho " + x + " trong khoảng từ " + a + " đến " + b + " là: " + soNhoNhat);
+        //     } else {
+        //         console.log("Không có số nào chia hết cho " + x + " trong khoảng từ " + a + " đến " + b);
+        //     }
+        //     } else {
+        //     console.log("Số b phải lớn hơn a");
+        //     }
+
+
+        // cau6
+        // function tinhGiaTriBieuThuc(n) {
+        //     let S = 0; 
+        //     for (let i = 1; i <= n; i++) {
+        //         S += 1 / (i * (i + 1));
+        //     }         
+        //     return S;
+        //     }
+        //     let n = parseInt(prompt("Nhập số n (n >= 2):"));
+        //     let ketQua = tinhGiaTriBieuThuc(n);
+        //     console.log("Giá trị của biểu thức S = " + ketQua);
+
+
+        // cau7
+        // function demSoUoc(n) {
+        //     let count = 0;
+        //     for (let i = 1; i <= n; i++) {
+        //         if (n % i === 0) {
+        //         count++;
+        //         }
+        //     }
+        //     return count;
+        //     }
+        //     let n = Number(prompt("Nhập số n:"));
+        //     let soUoc = demSoUoc(n);
+        //     console.log("Số ước của " + n + " là: " + soUoc);
+
+
+        // cau8
+        // function kiemTraSoNguyenTo(n) {
+        //     if (n < 2) {
+        //         return false;
+        //     }          
+        //     for (let i = 2; i <= Math.sqrt(n); i++) {
+        //         if (n % i === 0) {
+        //         return false;
+        //         }
+        //     }          
+        //     return true;
+        //     }
+        //     let n = Number(prompt("Nhập số n:"));
+        //     let laSoNguyenTo = kiemTraSoNguyenTo(n);
+        //     if (laSoNguyenTo) {
+        //     console.log(n + " là số nguyên tố");
+        //     } else {
+        //     console.log(n + " không là số nguyên tố");}
+
+
+        // cau9
+        // function themKyTu(s, l) {
+        //     while (s.length < l) {
+        //         s = '0' + s;
+        //     }            
+        //     return s;
+        //     }
+        //     let s = prompt("Nhập chuỗi s (chỉ gồm chữ số):");
+        //     let l = parseInt(prompt("Nhập số l:"));
+        //     let ketQua = themKyTu(s, l);
+        //     console.log("Chuỗi sau khi thêm ký tự '0': " + ketQua);
+
+
+        // cau10
+        // function timUocChungLonNhat(m, n) {
+        //     while (n !== 0) {
+        //         let temp = m % n;
+        //         m = n;
+        //         n = temp;
+        //     }     
+        //     return m;
+        //     }
+        //     let m = parseInt(prompt("Nhập số m (m > 0):"));
+        //     let n = parseInt(prompt("Nhập số n (n > 0):"));
+        //     let uocChungLonNhat = timUocChungLonNhat(m, n);
+        //     console.log("Ước chung lớn nhất của " + m + " và " + n + " là: " + uocChungLonNhat); 
+
+
+        // cau11
+        // function timBoiChungNhoNhat(m, n) {
+        // let uocChungLonNhat = timUocChungLonNhat(m, n);
+        // let boiChungNhoNhat = (m * n) / uocChungLonNhat;
+        // return boiChungNhoNhat;
+        // }
+        // let m = parseInt(prompt("Nhập số m (m > 0):"));
+        // let n = parseInt(prompt("Nhập số n (n > 0):"));
+        // let boiChungNhoNhat = timBoiChungNhoNhat(m, n);
+        // console.log("Bội chung nhỏ nhất của " + m + " và " + n + " là: " + boiChungNhoNhat);
+
+        // cau12
+        // let correct = Math.floor(Math.random() * 20) + 1;
+        //     let i = 0;
+        //     while (attempts < 5) {
+        //         let answer = prompt("Nhập vào một số từ 1 đến 20:");
+        //         if (answer == correct) {
+        //             alert("Đoán đúng");
+        //             break;
+        //         } else {
+        //             alert("Đoán sai");
+        //             i++;
+        //         }
+        //     }
+        //     if (i == 5) {
+        //         alert("Bạn đã thua cuộc");
+        //     }
+
+        // // cau13
+        // let n = prompt("Nhập vào số n (2 <= n <= 10):");
+        // for (let i = 1; i <= 10; i++) {
+        //     console.log(n + " x " + i + " = " + n * i);
+        // }
+        // cau14
+        // let n = prompt("Nhập vào số n (n >= 2):");
+        // let square = "";
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = 0; j < n; j++) {
+        //         square += "* ";
+        //     }
+        //     square += "\n";
+        // }
+        // console.log(square);
+
+        //   // 15. Hình chữ nhật
+        //     let m = prompt("Nhập vào số m (m >= 2):");
+        //     let n = prompt("Nhập vào số n (n >= 2):");
+        //     let rectangle = "";
+        //     for (let i = 0; i < n; i++) {
+        //         for (let j = 0; j < m; j++) {
+        //             rectangle += "* ";
+        //         }
+        //         rectangle += "\n";
+        //     }
+        //     console.log(rectangle);
+
+        // // 16. Hình tam giác vuông cân
+        // let n = prompt("Nhập vào số n (n >= 3):");
+        // let tam = "";
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = 0; j <= i; j++) {
+        //         tam += "* ";
+        //     }
+        //     tam += "\n";
+        // }
+        // console.log(tam);
+
+        
+
+
+            </script>
+</body>
+</html>

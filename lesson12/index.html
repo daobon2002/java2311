@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quản lý học sinh</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container mt-5">
+			<div class="form" >
+				<input id="id" type="text" class="form-control mt-2" placeholder="id" >
+				<input id="name" type="text" class="form-control mt-2" placeholder="name" >
+				<input type="radio" id="male" name="gender" value="Nam">
+					<label for="male">Nam</label><br>
+				<input type="radio" id="female" name="gender" value="Nữ">
+					<label for="female">Nữ</label><br>
+				<input id="math" type="text" class="form-control mt-2" placeholder="math-Score" >
+				<input id="english" type="text" class="form-control mt-2" placeholder="English Score" >
+				<input id="literature" type="text" class="form-control mt-2" placeholder="Literature Score" >
+		
+				<button id="btn-hienthi" type="button" class="btn btn-primary mt-3">shows</button>
+				<button id="btn-update" type="button" class="btn btn-primary mt-3">update</button>
+				<button id="btn-remove" type="button" class="btn btn-primary mt-3">remove</button>
+			</div>
+			<div class="form1 mt-2" style="display: flex; align-items: center; " >
+				<input id="Average" type="text" class="form-control mt-2" placeholder="Search" style="margin-right: 10px;" >
+				<button id="btn-timkiem" type="button" class="btn btn-primary mt-3">Search</button>
+			</div>
+			<div class="table-students">
+				<table class="table">
+					<thead>
+					  <tr>
+						<th scope="col">#ID</th>
+						<th scope="col">Name</th>
+						<th scope="col">Gender</th>
+						<th scope="col">Math Score</th>
+						<th scope="col">English Score</th>
+						<th scope="col">Literature Score</th>
+						<th scope="col">Average Score</th>
+						<th scope="col">Actions</th>
+					  </tr>
+
+					</thead>
+					<tbody id="show">
+					
+					 
+					</tbody>
+				  </table>
+			</div>
+
+		</div>
+		
+		<script src="./scripts.js" type="module"></script>
+		<script src="./features.js" type="module"></script>
+
+	</body>
+</html>
